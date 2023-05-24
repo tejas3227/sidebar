@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #eef1f3, #94daf9);
+}
+.container{
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  justify-content: right;
+  align-items: center;
+}
+
+.container .title{
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+.container .fields{
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+}
+.fields form .input-fields{
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+form  .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span{
+  display: block;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.input-fields .input-box input{
+  height: 45px;
+  width: 300px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-self: center;
+}
+.input-fields .input-box input:focus,
+.input-fields .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+.button button{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .button{
+   height: 45px;
+   margin: 35px 0
+  
+ }
+ form .button button{
+   height: 70%;
+   width: 70%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   justify-content: center;
+   
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+@media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}}
